@@ -18,34 +18,42 @@
         </div>
     </section>
 
-    {{-- SERVIZI --}}
-    <section class="services-section py-5 text-dark" id="servizi" role="region" aria-labelledby="servizi-titolo">
-        <div class="container">
-            <h2 id="servizi-titolo" class="text-center section-title mb-5 text-uppercase text-light">I nostri servizi</h2>
-            <div class="row text-center g-4">
-                <div class="col-md-4">
-                    <article class="p-4 bg-white rounded shadow-sm h-100 hover-up">
-                        <i class="bi bi-scissors fs-1 text-dark" aria-hidden="true"></i>
-                        <h3 class="mt-3 h5">Taglio Uomo</h3>
-                        <p>Taglio moderno o classico, sempre su misura per te.</p>
-                    </article>
-                </div>
-                <div class="col-md-4">
-                    <article class="p-4 bg-white rounded shadow-sm h-100 hover-up">
-                        <i class="bi bi-person-fill fs-1 text-dark" aria-hidden="true"></i>
-                        <h3 class="mt-3 h5">Rifinitura Barba</h3>
-                        <p>Barba modellata con precisione e prodotti professionali.</p>
-                    </article>
-                </div>
-                <div class="col-md-4">
-                    <article class="p-4 bg-white rounded shadow-sm h-100 hover-up">
-                        <i class="bi bi-stars fs-1 text-dark" aria-hidden="true"></i>
-                        <h3 class="mt-3 h5">Trattamenti Premium</h3>
-                        <p>Maschere viso, scrub e relax per un look impeccabile.</p>
-                    </article>
-                </div>
+{{-- SERVIZI --}}
+<section class="services-section py-5 text-dark" id="servizi" role="region" aria-labelledby="servizi-titolo">
+    <div class="container">
+        <h2 id="servizi-titolo" class="text-center section-title mb-5 text-uppercase text-light">I nostri servizi</h2>
+        <div class="row text-center g-4">
+
+            <div class="col-md-4">
+                <article class="p-4 bg-white rounded shadow-sm h-100 hover-up">
+                    <i class="bi bi-scissors fs-1 text-dark" aria-hidden="true"></i>
+                    <h3 class="mt-3 h5">Taglio Uomo</h3>
+                    <p>Taglio su misura o a misura unica: moderno, classico o veloce a soli €10–14.</p>
+                </article>
             </div>
+
+            <div class="col-md-4">
+                <article class="p-4 bg-white rounded shadow-sm h-100 hover-up">
+                    <i class="bi bi-droplet-half fs-1 text-dark" aria-hidden="true"></i>
+                    <h3 class="mt-3 h5">Shampoo & Barba</h3>
+                    <p>Barba rifinita con prodotti professionali e shampoo rilassante da €14.</p>
+                </article>
+            </div>
+
+            <div class="col-md-4">
+                <article class="p-4 bg-white rounded shadow-sm h-100 hover-up">
+                    <i class="bi bi-stars fs-1 text-dark" aria-hidden="true"></i>
+                    <h3 class="mt-3 h5">Look Completo</h3>
+                    <p>Taglio + barba + shampoo per un servizio completo a €25. Anche permanente e meches disponibili!</p>
+                </article>
+            </div>
+
         </div>
-    </section>
+        <div class="text-center mt-5">
+            <a href="{{ route('services') }}" class="btn btn-dc">Vedi il listino completo</a>
+        </div>
+    </div>
+</section>
+
 
 </x-layout>

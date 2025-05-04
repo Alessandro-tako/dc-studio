@@ -17,6 +17,11 @@
                                 <strong>Telefono:</strong> <a href="tel:+390774504981">+39 0774 504981</a>
                             </li>
                             <li class="mb-3">
+                                <i class="bi bi-envelope-fill me-2" aria-hidden="true"></i>
+                                <strong>Email:</strong>
+                                <a href="mailto:dcstudiobarber@gmail.com">dcstudiobarber@gmail.com</a>
+                            </li>
+                            <li class="mb-3">
                                 <i class="bi bi-geo-alt-fill me-2" aria-hidden="true"></i>
                                 <strong>Indirizzo:</strong> Via Maremmana Inferiore, 156, Villanova (RM)
                             </li>

@@ -63,6 +63,22 @@ html {
 
 }
 
+.navbar .nav-link {
+    color: #ffffff !important; /* colore bianco fisso */
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #e0e0e0 !important; /* grigio chiaro all'hover */
+}
+
+.navbar .nav-link.active {
+    color: #e0e0e0 !important;
+    font-weight: 600;
+}
+
+
 /* ==== Sezione Servizi & Prezzi ==== */
 
 .services-hero {

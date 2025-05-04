@@ -36,8 +36,8 @@
             {{-- Colonna: Social --}}
             <div class="col-12 col-md-4 mb-4 text-center text-md-start">
                 <h2 class="h5 textColor mb-3">Seguici</h2>
-                <div class="d-flex justify-content-center justify-content-md-start">
-                    <a href="https://www.instagram.com/dcstudiobarber/" target="_blank" rel="noopener" aria-label="Visita il nostro profilo Instagram" class="text-white me-3">
+                <div class="d-flex justify-content-evenly justify-content-md-start">
+                    <a href="https://www.instagram.com/dcstudiobarber/" target="_blank" rel="noopener" aria-label="Visita il nostro profilo Instagram" class="text-white">
                         <i class="bi bi-instagram fs-3"></i>
                     </a>
                 </div>
@@ -49,7 +49,7 @@
 
         <div class="row mt-3">
             <div class="col-12 text-center">
-                <p class="text-white mb-0 small">DC Studio Barber di Tripodi Alessandro - P.IVA: 17490471004</p>
+                <p class="text-white mb-0 small">DC Studio Barber - P.IVA: 17490471004</p>
                 <p class="text-white mb-0 small">&copy; 2024 - {{ now()->year }} Tutti i diritti riservati.</p>
                 <p class="text-white small">🔥 Powered by Takohr • il Forgiatore di Codice ⚒️</p>
             </div>
