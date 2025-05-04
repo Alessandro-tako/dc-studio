@@ -1,188 +1,205 @@
-/* ========== Variabili ========== */
 :root {
-    --colore-primario: #0A0A0A; /* Nero per testi e titoli */
-    --colore-secondario: #2C2C2C; /* Grigio scuro */
-    --colore-chiaro: #F5F5F5; /* Grigio chiaro per sezioni */
-    --colore-sfondo: #FFFFFF; /* Bianco per sfondo principale */
-    --colore-grigio-testuale: #6C757D; /* Grigio per testi secondari */
-    --colore-hover: #B0B0B0; /* Hover su bottoni */
-    --colore-overlay: rgba(255, 255, 255, 0.322);
-    --colore-highlight: #f8f8f8; /* Oro per highlights */
+    --bg-legno: url('/public\storage\images\bg-wood.png');
+    /* Assicurati che il file esista */
+    --colore-testo: #f5f5f5;
+    --colore-pulsante: #6e6e6e;
+    --colore-pulsante-hover: #5a5a5a;
+    --colore-overlay: rgba(0, 0, 0, 0.5);
+    --titolo-grande: #ffffff;
+    --sottotitolo: #e0e0e0;
 }
 
-/* ========== Base ========== */
-body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: var(--colore-sfondo);
-    color: var(--colore-primario);
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
+h1, h2, h3, h4, h5 {
+    font-family: 'Playfair Display', serif;
+}
+
+a{
     text-decoration: none;
+    color: var(--colore-testo);
 }
 
-/* ========== Titoli & Testi ========== */
-h1, h2, h3, h4, h5, h6 {
-    color: var(--colore-primario);
-    font-weight: bold;
-}
-
-p, a, li {
-    color: var(--colore-secondario);
-}
-
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    color: var(--colore-primario);
-}
-
-/* ========== Pulsanti ========== */
-.btn-custom {
-    background-color: var(--colore-primario); /* Nero per il bottone */
-    color: var(--colore-sfondo); /* Bianco per il testo */
-    padding: 10px 20px;
+/* ==== Bottoni ==== */
+.btn-dc {
+    background-color: var(--colore-pulsante);
+    color: #fff;
     border: none;
-    border-radius: 30px;
-    transition: all 0.3s ease;
+    padding: 0.6rem 1.4rem;
+    border-radius: 6px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease-in-out;
 }
 
-.btn-custom:hover {
-    background-color: var(--colore-chiaro); /* Grigio chiaro al passaggio del mouse */
-    color: var(--colore-primario); /* Testo nero quando hover */
+.btn-dc:hover {
+    background-color: var(--colore-pulsante-hover);
 }
 
-.btn-outline-light {
-    border: 1px solid var(--colore-hover);
-    color: var(--colore-secondario);
+/* ==== Body ==== */
+
+body,
+html {
+    margin-top: 50px;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg-legno) no-repeat center center fixed;
+    background-size: cover;
+    color: var(--colore-testo);
 }
 
-.btn-outline-light:hover {
-    background-color: var(--colore-chiaro);
-    color: var(--colore-primario);
+/* ==== Navbar ==== */
+
+.nav-cus {
+    margin: 5vh 10vw;
+    border-radius: 10px;
+    border: 2px solid var(--colore-testo);
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
 }
 
-/* ========== Hero Section ========== */
-.hero {
-    background-color: var(--colore-chiaro);
+.navbar-logo {
+    width: 80px;
+    height: 50px;
+
+}
+
+/* ==== Sezione Servizi & Prezzi ==== */
+
+.services-hero {
+    padding: 5rem 0;
+    background-color: var(--colore-overlay);
+    backdrop-filter: blur(5px);
+    text-align: center;
+    margin-top: 150px;
+}
+
+.services-title {
+    color: var(--titolo-grande);
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.services-subtitle {
+    color: var(--sottotitolo);
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.services-box {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);
+}
+
+.table {
+    color: var(--colore-testo);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.table thead th {
+    background-color: var(--colore-pulsante);
+    color: #fff;
+    border-color: #444;
+}
+
+.table td,
+.table th {
+    vertical-align: middle;
+    border-color: #444;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .services-title {
+        font-size: 2rem;
+    }
+
+    .services-subtitle {
+        font-size: 1rem;
+    }
+}
+
+/* ==== Sezione Contatti ==== */
+
+.contact-section {
+    background: var(--colore-overlay), var(--bg-legno);
     background-size: cover;
     background-position: center;
-    height: 100vh;
-    position: relative;
+    padding: 5rem 0;
 }
 
-.hero .overlay {
-    background-color: var(--colore-overlay);
-    padding: 2rem;
-    border-radius: 15px;
-    color: var(--colore-primario);
-}
-
-.hero h1 {
-    color: var(--colore-primario);
-}
-
-.hero .text-highlight {
-    color: var(--colore-highlight);
-}
-
-/* ========== Sezioni ========== */
-
-.bg-light-section {
-    background-color: var(--colore-chiaro);
-}
-
-.bg-dark-section {
-    background-color: #EDEDED;
-}
-
-.text-gray {
-    color: var(--colore-grigio-testuale);
-}
-
-/* ========== Box Servizi ========== */
-.service-box {
-    background-color: #F0F0F0;
-    border-radius: 10px;
-    padding: 30px;
-    color: var(--colore-primario);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.service-box:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-}
-
-/* ========== Footer ========== */
-footer {
-    background-color: #F0F0F0;
-    color: var(--colore-secondario);
-    padding: 20px 0;
+.contact-title {
+    color: var(--titolo-grande);
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
     text-align: center;
+    margin-bottom: 1rem;
 }
 
-footer a {
-    color: var(--colore-secondario);
-    margin: 0 10px;
+.contact-subtitle {
+    color: var(--sottotitolo);
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 3rem;
 }
 
-footer a:hover {
-    color: var(--colore-primario);
-}
-
-/* ========== Sezione Contatti ========== */
-.contact {
-    background-color: var(--colore-chiaro);
-    padding: 60px 20px;
-    position: relative;
-    min-height: 600px; /* Altezza minima per evitare sovrapposizioni */
-}
-
-.contact h2 {
-    color: var(--colore-primario);
-}
-
-.contact p {
-    color: var(--colore-grigio-testuale);
-}
-
-.contact ul {
-    color: var(--colore-secondario);
-    font-size: 1.1rem;
-    line-height: 1.8;
-}
-
-.contact a {
-    color: var(--colore-primario);
-}
-
-.contact a:hover {
-    color: var(--colore-hover);
-}
-
-.map-container iframe {
+.contact-box {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);
+    color: var(--colore-testo);
+}
+
+.contact-box a {
+    color: var(--colore-testo);
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.contact-box a:hover {
+    color: var(--colore-pulsante);
+}
+
+.contact-box h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.contact-box iframe {
+    border: none;
     width: 100%;
     height: 400px;
-    margin-bottom: 30px; /* Margine tra la mappa e il footer */
+    border-radius: 10px;
 }
 
-/* ========== Responsività ========== */
-@media (max-width: 767px) {
-    .contact .row {
-        flex-direction: column-reverse; /* La mappa va sotto i contatti su mobile */
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-title {
+        font-size: 2rem;
     }
 
-    .contact .col-md-6 {
-        width: 100%;
+    .contact-subtitle {
+        font-size: 1rem;
     }
+}
 
-    .contact .map-container iframe {
-        height: 250px; /* Altezza ridotta della mappa sui dispositivi mobili */
-        margin-bottom: 20px; /* Margine tra mappa e footer su mobile */
-    }
+/* ==== galleria ==== */
+.galleria-img {
+    width: 100%;
+    height: 250px; /* o 300px se preferisci più alte */
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
 }

@@ -1,44 +1,49 @@
 <x-layout>
-    <section class="bg-light-section py-5">
+
+    {{-- HERO CHI SIAMO --}}
+    <section class="services-hero" role="banner">
+        <div class="container text-center">
+            <h1 class="services-title">Chi siamo</h1>
+            <p class="services-subtitle">Stile, passione e precisione — benvenuto nel mondo di DC Studio Barber.</p>
+        </div>
+    </section>
+
+    {{-- TESTO + IMMAGINE --}}
+    <section class="py-5" id="storia" role="region" aria-labelledby="titolo-storia">
         <div class="container">
-            <div class="row align-items-center">
-                <!-- Testo -->
-                <div class="col-md-6 mb-4 mb-md-0">
-                    <h2 class="mb-4">Chi siamo</h2>
-                    <p class="lead text-gray">
-                        Siamo un team di barbieri professionisti con una missione: trasformare ogni taglio in un'esperienza unica.
-                    </p>
-                    <p class="text-gray">
-                        Tradizione e innovazione si incontrano nel nostro barber shop. Dalla rasatura classica ai tagli moderni, ogni dettaglio è curato con precisione e stile. Vieni a scoprire l’arte del grooming maschile.
-                    </p>
-                    <a href="{{ route('services') }}" class="btn btn-custom mt-3">Scopri i nostri servizi</a>
-                </div>
-    
-                <!-- Immagine -->
+            <div class="row align-items-center g-5">
                 <div class="col-md-6">
-                    <img src="https://picsum.photos/200" alt="Team Barber Shop" class="img-fluid rounded-4 shadow">
+                    <div class="services-box">
+                        <h2 id="titolo-storia" class="h4 mb-3">La nostra storia</h2>
+                        <p>DC Studio nasce da un’idea semplice: offrire più di un taglio. Offriamo un’esperienza, un momento di pausa in un ambiente curato, dove ogni cliente è unico.</p>
+                        <p>Con passione per il dettaglio, tecniche aggiornate e un tocco di stile personale, siamo diventati un punto di riferimento a Villanova (RM).</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="services-box p-0 overflow-hidden">
+                        <img src="{{ Storage::url('images/foto-team.png') }}" class="img-fluid rounded" alt="Il team di DC Studio Barber">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    
-    <!-- Galleria Immagini -->
-    <section class="py-5 bg-dark-section">
+
+    {{-- GALLERIA / LOOKBOOK --}}
+    <section class="py-5" id="lookbook" role="region" aria-labelledby="titolo-galleria">
         <div class="container">
-            <h2 class="text-center mb-5">Il nostro stile</h2>
-            <div class="row g-3">
-                <div class="col-md-4">
-                    <img src="https://picsum.photos/200/300" class="img-fluid rounded shadow-sm gallery-img" alt="Taglio barba 1">
-                </div>
-                <div class="col-md-4">
-                    <img src="https://picsum.photos/200" class="img-fluid rounded shadow-sm gallery-img" alt="Dettaglio stile">
-                    <img src="https://picsum.photos/200" class="img-fluid rounded shadow-sm gallery-img mt-3" alt="Lavoro di precisione">
-                </div>
-                <div class="col-md-4">
-                    <img src="https://picsum.photos/200" class="img-fluid rounded shadow-sm gallery-img" alt="Rasatura classica">
-                </div>
+            <h2 id="titolo-galleria" class="services-title text-center mb-4">Il nostro stile</h2>
+            <p class="services-subtitle text-center mb-5">Scopri alcuni dei nostri tagli, barbe e trattamenti</p>
+
+            <div class="row g-4">
+                @foreach (range(1, 6) as $i)
+                    <div class="col-6 col-md-4">
+                        <figure class="services-box p-0 overflow-hidden m-0">
+                            <img src="{{ Storage::url('images/foto' . $i . '.png') }}" class="galleria-img" alt="Look taglio e barba {{ $i }}">
+                        </figure>
+                    </div>
+                @endforeach
             </div>
         </div>
     </section>
-    
+
 </x-layout>

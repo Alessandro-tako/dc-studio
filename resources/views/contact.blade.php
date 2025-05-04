@@ -1,29 +1,57 @@
 <x-layout>
-    <section class="contact vh-100">
-        <div class="container py-5">
-            <div class="row">
-                <!-- Sezione Contatti -->
-                <div class="col-12 col-md-6 mb-4 mb-md-0">
-                    <h2 class="mb-4">Contattaci</h2>
-                    <p class="text-gray">Vieni a trovarci!</p>
-                    <p class="text-gray">Per info & prenotazioni:</p>
 
-                    <ul class="list-unstyled">
-                        <li><strong>Telefono:</strong> <a href="tel:+390774504981">+39 0774 504981</a></li>
-                        <li><strong>Indirizzo:</strong> Via Maremmana Inferiore, 156, 00012, Villanova, RM</li>
-                        <li><strong>Instagram:</strong> <a href="https://www.instagram.com/dcstudiobarber/#" target="_blank"><i class="bi bi-instagram"></i> Seguici su Instagram</a></li>
-                        <li><strong>App per Prenotazioni:</strong> <a href="https://www.barberapp.it" target="_blank" ><i class="bi bi-calendar-check"></i> Prenota Ora</a></li>
-                    </ul>
-                </div>
+    <section class="contact-section" role="region" aria-labelledby="contatti-titolo">
+        <div class="container">
+            <h1 id="contatti-titolo" class="contact-title">Contattaci</h1>
+            <p class="contact-subtitle">Hai domande o vuoi prenotare? Siamo qui per te.</p>
 
-                <!-- Mappa Google -->
+            <div class="row justify-content-center align-items-center g-5">
+
+                {{-- Informazioni di contatto --}}
                 <div class="col-12 col-md-6">
-                    <h2 class="mb-4">Dove Trovarci</h2>
-                    <div class="map-container">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.814528612404!2d12.75525647741818!3d41.96131867123269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f797ddffec92f%3A0x636c13bfd066cf99!2sDC%20Studio%20Barber!5e0!3m2!1sit!2sit!4v1743930538490!5m2!1sit!2sit" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="contact-box" role="complementary" aria-label="Informazioni di contatto">
+                        <h2 class="h4">Informazioni</h2>
+                        <ul class="list-unstyled fs-5">
+                            <li class="mb-3">
+                                <i class="bi bi-telephone-fill me-2" aria-hidden="true"></i>
+                                <strong>Telefono:</strong> <a href="tel:+390774504981">+39 0774 504981</a>
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-geo-alt-fill me-2" aria-hidden="true"></i>
+                                <strong>Indirizzo:</strong> Via Maremmana Inferiore, 156, Villanova (RM)
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-instagram me-2" aria-hidden="true"></i>
+                                <strong>Instagram:</strong>
+                                <a href="https://www.instagram.com/dcstudiobarber/" target="_blank" rel="noopener">Seguici</a>
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-calendar-check me-2" aria-hidden="true"></i>
+                                <strong>Prenotazioni:</strong>
+                                <a href="https://www.barberapp.it" target="_blank" rel="noopener">Prenota ora</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
+
+                {{-- Mappa --}}
+                <div class="col-12 col-md-6">
+                    <div class="contact-box p-0" role="complementary" aria-label="Mappa della posizione">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.814528612404!2d12.75525647741818!3d41.96131867123269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f797ddffec92f%3A0x636c13bfd066cf99!2sDC%20Studio%20Barber!5e0!3m2!1sit!2sit!4v1743930538490!5m2!1sit!2sit"
+                            allowfullscreen
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Mappa DC Studio Barber"
+                            width="100%"
+                            height="400"
+                            style="border:0; border-radius: 10px;">
+                        </iframe>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
+
 </x-layout>
