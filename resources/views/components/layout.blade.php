@@ -10,7 +10,8 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     {{-- SEO meta tags --}}
-    <meta name="description" content="DC Studio Barber - Tagli moderni, barba curata, stile autentico a Villanova. Prenota online il tuo appuntamento.">
+    <meta name="description"
+        content="DC Studio Barber - Tagli moderni, barba curata, stile autentico a Villanova. Prenota online il tuo appuntamento.">
     <meta name="keywords" content="Barbiere, DC Studio, Taglio uomo, Barba, Barber Villanova, Prenotazione online">
 
     {{-- Open Graph (per condivisione social) --}}
@@ -24,8 +25,26 @@
     <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
 
     {{-- Google Fonts --}}
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap"
+        rel="stylesheet">
 
+    {{-- Google Analytics --}}
+    @if (app()->environment('production'))
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FTQJSGS4PD"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'G-FTQJSGS4PD');
+        </script>
+    @endif
+    {{-- End Google Analytics --}}
+    
     {{-- Title --}}
     <title>@yield('title', 'DC Studio Barber')</title>
 </head>
@@ -48,4 +67,5 @@
     </footer>
 
 </body>
+
 </html>

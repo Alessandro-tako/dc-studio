@@ -26,42 +26,42 @@
                         <tr>
                             <th scope="row">Barba</th>
                             <td>Modellatura e rifinitura con prodotti professionali</td>
-                            <td>€8</td>
+                            <td>8€</td>
                         </tr>
                         <tr>
                             <th scope="row">Taglio misura unica</th>
                             <td>Taglio con macchinetta su tutta la testa</td>
-                            <td>€10</td>
+                            <td>10€</td>
                         </tr>
                         <tr>
                             <th scope="row">Meches</th>
                             <td>Colpi di luce, a partire da €10 in base alla quantità</td>
-                            <td>A partire da €10</td>
+                            <td>A partire da 10€</td>
                         </tr>
                         <tr>
                             <th scope="row">Taglio</th>
                             <td>Taglio su misura, moderno o classico</td>
-                            <td>€14</td>
+                            <td>14€</td>
                         </tr>
                         <tr>
                             <th scope="row">Barba & Shampoo</th>
                             <td>Barba rifinita + lavaggio rilassante</td>
-                            <td>€14</td>
+                            <td>14€</td>
                         </tr>
                         <tr>
                             <th scope="row">Taglio & Shampoo</th>
                             <td>Taglio personalizzato + lavaggio con prodotti professionali</td>
-                            <td>€17</td>
+                            <td>17€</td>
                         </tr>
                         <tr>
                             <th scope="row">Taglio, Barba & Shampoo</th>
                             <td>Servizio completo: taglio, rifinitura barba e lavaggio</td>
-                            <td>€25</td>
+                            <td>25€</td>
                         </tr>
                         <tr>
                             <th scope="row">Permanente</th>
                             <td>Trattamento per capelli mossi o ricci a lunga durata</td>
-                            <td>€30</td>
+                            <td>30€</td>
                         </tr>
                     </tbody>
                 </table>

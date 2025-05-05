@@ -28,7 +28,7 @@
                 <article class="p-4 bg-white rounded shadow-sm h-100 hover-up">
                     <i class="bi bi-scissors fs-1 text-dark" aria-hidden="true"></i>
                     <h3 class="mt-3 h5">Taglio Uomo</h3>
-                    <p>Taglio su misura o a misura unica: moderno, classico o veloce a soli €10–14.</p>
+                    <p>Taglio su misura o a misura unica: moderno, classico o veloce a soli 10–14€.</p>
                 </article>
             </div>
 
@@ -36,7 +36,7 @@
                 <article class="p-4 bg-white rounded shadow-sm h-100 hover-up">
                     <i class="bi bi-droplet-half fs-1 text-dark" aria-hidden="true"></i>
                     <h3 class="mt-3 h5">Shampoo & Barba</h3>
-                    <p>Barba rifinita con prodotti professionali e shampoo rilassante da €14.</p>
+                    <p>Barba rifinita con prodotti professionali e shampoo rilassante da 14€.</p>
                 </article>
             </div>
 
@@ -44,7 +44,7 @@
                 <article class="p-4 bg-white rounded shadow-sm h-100 hover-up">
                     <i class="bi bi-stars fs-1 text-dark" aria-hidden="true"></i>
                     <h3 class="mt-3 h5">Look Completo</h3>
-                    <p>Taglio + barba + shampoo per un servizio completo a €25. Anche permanente e meches disponibili!</p>
+                    <p>Taglio + barba + shampoo per un servizio completo a 25€. Anche permanente e meches disponibili!</p>
                 </article>
             </div>
 
