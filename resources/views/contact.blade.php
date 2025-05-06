@@ -1,14 +1,14 @@
 <x-layout>
 
     <section class="contact-section" role="region" aria-labelledby="contatti-titolo">
-        <div class="container">
+        <div class="container-fluid">
             <h1 id="contatti-titolo" class="contact-title">Contattaci</h1>
             <p class="contact-subtitle">Hai domande o vuoi prenotare? Siamo qui per te.</p>
 
-            <div class="row justify-content-center align-items-center g-5">
+            <div class="row justify-content-center align-items-center">
 
                 {{-- Informazioni di contatto --}}
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 mb-5">
                     <div class="contact-box" role="complementary" aria-label="Informazioni di contatto">
                         <h2 class="h4">Informazioni</h2>
                         <ul class="list-unstyled fs-5">
@@ -40,7 +40,7 @@
                 </div>
 
                 {{-- Mappa --}}
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 mt-2">
                     <div class="contact-box p-0" role="complementary" aria-label="Mappa della posizione">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.814528612404!2d12.75525647741818!3d41.96131867123269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f797ddffec92f%3A0x636c13bfd066cf99!2sDC%20Studio%20Barber!5e0!3m2!1sit!2sit!4v1743930538490!5m2!1sit!2sit"
