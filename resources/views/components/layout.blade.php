@@ -51,10 +51,92 @@
         </script>
     @endif
 
+    {{-- JSON-LD: Attività locale --}}
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Barbershop",
+            "name": "DC Studio Barber",
+            "image": "https://dcstudiobarber.it/images/logoPrincipale.png",
+            "url": "https://dcstudiobarber.it",
+            "telephone": "+39 0774 504981",
+            "priceRange": "€€",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Via Maremmana Inferiore, 156",
+                "addressLocality": "Villanova",
+                "addressRegion": "RM",
+                "postalCode": "00012",
+                "addressCountry": "IT"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 41.9613187,
+                "longitude": 12.7586316
+            },
+            "openingHoursSpecification": [
+                {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday"
+                ],
+                "opens": "09:00",
+                "closes": "19:30"
+                }
+            ],
+            "makesOffer": [
+                {
+                "@type": "Offer",
+                "name": "Taglio Uomo",
+                "price": "14.00",
+                "priceCurrency": "EUR"
+                },
+                {
+                "@type": "Offer",
+                "name": "Shampoo & Barba",
+                "price": "14.00",
+                "priceCurrency": "EUR"
+                },
+                {
+                "@type": "Offer",
+                "name": "Look Completo",
+                "price": "25.00",
+                "priceCurrency": "EUR"
+                }
+            ],
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5.0",
+                "reviewCount": "22"
+            },
+            "sameAs": [
+                "https://www.instagram.com/dcstudiobarber/",
+                "https://www.barberapp.it"
+            ]
+        }
+        </script>
+
+        <style>
+            html, body{
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ asset('storage/images/bg-wood.png') }}');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+        </style>
+        
+
+
     <title>@yield('title', 'DC Studio Barber')</title>
 </head>
 
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100 mt-5">
     {{-- Navbar --}}
     <header>
         <x-navbar />

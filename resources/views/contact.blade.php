@@ -2,7 +2,7 @@
 
     <section class="contact-section" role="region" aria-labelledby="contatti-titolo">
         <div class="container-fluid">
-            <h1 id="contatti-titolo" class="contact-title">Contattaci</h1>
+            <h1 id="contatti-titolo" class="contact-title mt-5">Contattaci</h1>
             <p class="contact-subtitle">Hai domande o vuoi prenotare? Siamo qui per te.</p>
 
             <div class="row justify-content-center align-items-center">
