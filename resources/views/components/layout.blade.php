@@ -122,8 +122,8 @@
         </script>
 
         <style>
-            html, body{
-                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ asset('storage/images/bg-wood.png') }}');
+            body{
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ asset('storage/images/sfondo.png') }}');
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -136,7 +136,7 @@
     <title>@yield('title', 'DC Studio Barber')</title>
 </head>
 
-<body class="d-flex flex-column min-vh-100 mt-5">
+<body class="d-flex flex-column min-vh-100">
     {{-- Navbar --}}
     <header>
         <x-navbar />

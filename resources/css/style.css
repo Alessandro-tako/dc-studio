@@ -39,19 +39,16 @@ a {
 }
 
 /* ==== Body ==== */
-body,
-html {
-    margin-top: 50px;
+body {
     padding: 0;
-    height: 100%;
+    margin-top: 85px;
+    min-height: 100vh;
     font-family: 'Segoe UI', sans-serif;
-    color: var(--colore-testo);
-    background-image: url('public\storage\images\bg-wood.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
+    /* background: linear-gradient(135deg, #000000 0%, #666666 100%); */
+    color: #ffffff;
+
 }
+
 
 /* ==== Navbar ==== */
 .nav-cus {
@@ -133,7 +130,7 @@ html {
 
 /* ==== Sezione Contatti ==== */
 .contact-section {
-    background: var(--colore-overlay),;
+    background: var(--colore-overlay), ;
     background-size: cover;
     background-position: center;
     padding: 5rem 0;

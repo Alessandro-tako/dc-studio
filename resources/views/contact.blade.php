@@ -28,13 +28,28 @@
                             <li class="mb-3">
                                 <i class="bi bi-instagram me-2" aria-hidden="true"></i>
                                 <strong>Instagram:</strong>
-                                <a href="https://www.instagram.com/dcstudiobarber/" target="_blank" rel="noopener">Seguici</a>
+                                <a href="https://www.instagram.com/dcstudiobarber/" target="_blank"
+                                    rel="noopener">Seguici</a>
                             </li>
                             <li class="mb-3">
                                 <i class="bi bi-calendar-check me-2" aria-hidden="true"></i>
                                 <strong>Prenotazioni:</strong>
                                 <a href="https://www.barberapp.it" target="_blank" rel="noopener">Prenota ora</a>
                             </li>
+                        </ul>
+                    </div>
+
+                    {{-- Orari di apertura --}}
+                    <div class="contact-box mt-4" role="complementary" aria-label="Orari di apertura">
+                        <h2 class="h4">Orari di apertura</h2>
+                        <ul class="list-unstyled fs-5">
+                            <li class="mb-2"><strong>Lunedì:</strong> Chiuso</li>
+                            <li class="mb-2"><strong>Martedì:</strong> 8:30 - 20:00</li>
+                            <li class="mb-2"><strong>Mercoledì:</strong> 8:30 - 20:00</li>
+                            <li class="mb-2"><strong>Giovedì:</strong> 8:30 - 20:00</li>
+                            <li class="mb-2"><strong>Venerdì:</strong> 8:30 - 20:00</li>
+                            <li class="mb-2"><strong>Sabato:</strong> 8:30 - 20:00</li>
+                            <li class="mb-2"><strong>Domenica:</strong> Chiuso</li>
                         </ul>
                     </div>
                 </div>
@@ -44,12 +59,8 @@
                     <div class="contact-box p-0" role="complementary" aria-label="Mappa della posizione">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.814528612404!2d12.75525647741818!3d41.96131867123269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f797ddffec92f%3A0x636c13bfd066cf99!2sDC%20Studio%20Barber!5e0!3m2!1sit!2sit!4v1743930538490!5m2!1sit!2sit"
-                            allowfullscreen
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"
-                            title="Mappa DC Studio Barber"
-                            width="100%"
-                            height="400"
+                            allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            title="Mappa DC Studio Barber" width="100%" height="400"
                             style="border:0; border-radius: 10px;">
                         </iframe>
                     </div>

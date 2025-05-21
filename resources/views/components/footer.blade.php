@@ -1,4 +1,4 @@
-<footer class="bg-black text-light pt-5 pb-4 mt-5" role="contentinfo">
+<footer class="bg-black text-light pt-5 pb-4 mt-5 border-top border-secondary" role="contentinfo">
     <div class="container">
 
         <div class="row g-4 justify-content-between">
